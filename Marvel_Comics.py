@@ -13,7 +13,7 @@ print(Data.head())
 
 #step 2: connecting to the mysql and creating the database
 try:
-    conn = mysql.connect(host='localhost', user='root', password='a1h2m3e4d5')
+    conn = mysql.connect(host='localhost', user='root', password='')
     if conn.is_connected():
         cursor = conn.cursor()
         cursor.execute("CREATE DATABASE IF NOT EXISTS Marvel_Comics;")
